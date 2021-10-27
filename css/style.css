@@ -180,13 +180,14 @@ overflow: hidden;}
     }
 .pp{
     background-image: url('../images/pp.png');
-    width: 25%;
-    height: 80%;
+    width: 30%;
+    height: 100%;
+    
     background-size: 100%;
     background-repeat: no-repeat;
-    left: 40%;
-    top: 15%;
-    position:relative;
+    left: 25%;
+    top: -20%;
+    position:fixed;
     cursor: pointer;
    
 }
@@ -198,10 +199,10 @@ overflow: hidden;}
   }
 .pp.revise{
     animation:revise 1s  linear;
-    width: 10%;
-    height: 50%;
-   top: 18%;
-    left: 40%;
+    width: 15%;
+    height:50%;
+   top: -10%;
+    left: 50%;
     
 }
 
@@ -211,7 +212,7 @@ overflow: hidden;}
     height: 30%;
     background-size: 30%;
     background-repeat: no-repeat;
-    top: 55%;
+    top: 65%;
     left: 20%;
     position:absolute;
     animation-name: big; 
@@ -223,7 +224,7 @@ overflow: hidden;}
 }
 .pp1.revise{
    
-    top: 35%;
+    top:60%;
 }
 @keyframes big{
     0%{ opacity: 0 ;}
@@ -331,9 +332,9 @@ overflow: hidden;}
     background-image: url('../images/pum.svg');
     background-size: 100%;
   
-    position:absolute;
-    top: 45%;
-    left:45%;
+    position:fixed;
+    top: 25%;
+    left:35%;
     background-repeat: no-repeat;
     cursor: pointer;
 
@@ -362,7 +363,7 @@ overflow: hidden;}
     height: 1080px;
   
     background-color: rgba(0, 0,0, 1);
-    position:absolute;
+    position:fixed;
     top: 0%;
     left: 0%;
 
@@ -394,9 +395,9 @@ overflow: hidden;}
     background-image: url('../images/touch.png');
     background-size: 100%;
   
-    position:absolute;
-    top: 40%;
-    left:65%;
+    position:fixed;
+    top: 20%;
+    left:60%;
     background-repeat: no-repeat;
     animation:touchpum 3s  infinite;
     
