@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            var timer;
+            $('.pp').on('click', function () {
+                $('.pp').addClass('click');
+                /*clearTimeout(timer);
+                timer = setTimeout(function () {
+                    $('.pp').removeClass('click');
+                }, 2000);*/
+
+
+            });
+        });
+
+        $(function () {
+            var timer;
+            $('.pp').on('click', function () {
+                $('.pp').addClass('revise');
+                $(".pp").show(1000);
+                $(".black").show(1000);
+                $('.party').remove();
+            });
+        });
+
+        $(function () {
+            var timer;
+            $('.pp1').on('click', function () {
+                $('.pp1').addClass('revise');
+
+            });
+        });
+        $(document).ready(function () {
+            $(".pp").hover(function () {
+                $(".party").stop(true).css("display", "block");
+            }, function () {
+                $(".party").stop(true).css("display", "none");
+            });
+        });
+        $(document).ready(function () {
+            $(".party").hover(function () {
+                $(".party").stop(true).css("display", "block");
+            }, function () {
+                $(".party").stop(true).css("display", "none");
+            });
+        });
+
+        //開頭畫面
+        $(function () {
+            var timer;
+            $('.pum').on('click', function () {
+                $('.pum').addClass('click');
+                $('.pumb').addClass('click');
+                $('.touch').remove();
+
+            });
+        });
+        $(function () {
+            $('.pum').bind("click", function () {
+                setTimeout(function () { $('.pum').addClass('revise'); }, 5000);
+                setTimeout(function () { $('.pumb').addClass('revise'); }, 5000);
+            });
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="background" style="background-image:url('images/background.jpg');">
+        <div class="pumkin p1" style="background-image: url('images/p1.png');"></div>
+        <div class="pumkin p2" style="background-image: url('images/p2.png');"></div>
+        <div class="pumkin p3" style="background-image: url('images/p3.png');"></div>
+        <div class="pumkin p4" style="background-image: url('images/p4.png');"></div>
+        <div class="pumkin p5" style="background-image: url('images/p5.png');"></div>
+        <div class="pumkin p6" style="background-image: url('images/p6.png');"></div>
+        <div class="moon" style="background-image: url('images/moon.png');"></div>
+        <div class="b1"></div>
+        <div class="b1 b2"></div>
+        <div class="b1 b3"></div>
+
+        <div class="black">
+            <div class="word"></div>
+        </div>
+
+        <div class="pp">
+            <div class="pp1"></div>
+
+        </div>
+
+    </div>
+
+    <div class="party"></div>
+    <div class="pumb">
+        <div class="pum"></div>
+        <div class="touch"></div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>

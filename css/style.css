@@ -1,0 +1,412 @@
+body{margin: 0px;
+width: 1920px;
+height: 1080px;
+overflow: hidden;}
+.background{
+    background-position:top left;
+    width:100%;
+    height: 100%;
+    margin: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.pumkin{
+    
+    position:fixed; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation-name: MoveToBottom;  
+    animation-iteration-count: infinite;  
+}
+.p1{
+    top:0px;
+    right:12px;
+    width: 15%;
+    height:60%;
+    animation-duration: 4s;    /*動畫持續時間，單位為秒*/
+}
+
+.p2{
+    top:0px;
+    right:100px;
+    width: 15%;
+    height:100%;
+    animation-duration: 3s;    /*動畫持續時間，單位為秒*/
+}
+.p3{
+    top:-200px;
+    right:200px;
+    width: 20%;
+    height:100%;
+    animation-duration: 4s;  
+    animation-name: MoveToBottom1;   /*動畫持續時間，單位為秒*/
+}
+
+.p4{
+    top:0px;
+    left:10px;
+    width: 15%;
+    height:100%;
+    animation-duration: 3s;    /*動畫持續時間，單位為秒*/
+}
+
+.p5{
+    top:0px;
+    left:100px;
+    width: 15%;
+    height:100%;
+    animation-duration: 6s;    /*動畫持續時間，單位為秒*/
+}
+
+.p6{
+    top:0px;
+    left:150px;
+    width: 15%;
+    height:100%;
+    animation-duration: 4s;    /*動畫持續時間，單位為秒*/
+}
+@keyframes MoveToBottom{
+0%{ top:0px;}
+50%{top:-50px;}
+100%{ top:0px;}
+
+}
+@keyframes MoveToBottom1{
+    0%{ top:-200px;}
+    50%{top:-100px;}
+    100%{ top:-200px;}
+    
+    }
+
+.moon{
+    top:0px;
+    left:50%;
+    width: 30%;
+    height:100%;
+    position:fixed; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation-name: Moon;  
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;
+    animation-duration: 15s; 
+}
+
+@keyframes Moon{
+    0%{ transform:scale(1) ;}
+    50%{transform: scale(1.1);}
+    100%{ transform: scale(1);}
+    
+    }
+
+.b1{
+
+    top:130%;
+    left:70%;
+    width:5%;
+    height:10%;
+    position:fixed; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image:url('../images/b1.png');
+    
+    animation-timing-function: linear;
+    animation: bat 1s infinite,batfly 15s infinite;
+    
+    
+}
+
+.b2{
+
+    top:-30%;
+    left:-20%;
+    width:5%;
+    height:10%;
+    position:fixed; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image:url('../images/b1.png');
+    
+    
+    animation-timing-function: linear;
+    animation: bat 1s infinite,batfly1 20s infinite;
+    
+    
+}
+.b3{
+
+   top:20%;
+    left:-50%;
+    width:5%;
+    height:10%;
+    animation-timing-function: linear;
+    animation: bat 1s infinite,batfly2 30s infinite;
+}
+@keyframes bat{
+    0%{ background-image:url('../images/b1.png');
+        }
+    50%{background-image:url('../images/b2.png');
+        
+    }
+    100%{background-image:url('../images/b1.png');
+       
+    }
+    }
+@keyframes batfly{
+    0%{ top:130%;}
+    50%{
+        top:-50%;
+        left: 30%;
+    }
+    100%{
+        top:130%;}
+    }
+@keyframes batfly1{
+    0%{ top:-30%;}
+    50%{
+        top:150%;
+        left: 80%;
+    }
+    100%{
+        top:-30%;}
+    }
+@keyframes batfly2{
+    0%{ left:-50%;}
+    50%{
+           top:70%;
+            left: 180%;  }
+    100%{ left:-50%;
+            }
+    }
+.pp{
+    background-image: url('../images/pp.png');
+    width: 25%;
+    height: 80%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 40%;
+    top: 20%;
+    position:relative;
+    cursor: pointer;
+   
+}
+
+.pp.click{  
+   
+    display:none;
+
+  }
+.pp.revise{
+    animation:revise 1s  linear;
+    width: 10%;
+    height: 50%;
+    top: 25%;
+    
+}
+
+.pp1{
+    background-image: url('../images/pp1.png');
+    width: 80%;
+    height: 30%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    top: 55%;
+    left: 20%;
+    position:absolute;
+    animation-name: big; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;  
+}
+.pp:hover{
+    transform: rotate(0.01turn);
+}
+.pp1.revise{
+   
+    top: 35%;
+}
+@keyframes big{
+    0%{ opacity: 0 ;}
+    100%{ opacity: 1;}
+    
+    }
+@keyframes big{
+    0%{ transform:scale(1) ;}
+    40%{transform:scale(1) ;}
+    50%{transform: scale(1.1);
+        transform: rotate(0.1turn);
+     }
+    60%{transform:scale(1) ;}
+    100%{ transform: scale(1);}
+    
+    }
+.black
+{
+    display:none;
+    width: 55%;
+    height: 100%;
+    background-image: url('../images/bgtop.png');
+    left: 20%;
+    top:0% ;
+    background-size: 100%;
+    position: fixed;
+    border-radius: 15px;
+    text-align: center;
+    
+    padding-top: 5%;
+    background-repeat: no-repeat;
+}
+
+.word{
+
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/word.png');
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/**.btn,.btn::before{
+    width:200px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border-radius:3px;
+  }
+  .btn{
+    position:relative;
+    background:#5ad;
+    color:#fff;
+    cursor:pointer;
+  }
+  .btn::before{
+    content:"loading";
+    position:absolute;
+    display:none;
+    z-index:2;
+    top:0;
+    left:0;
+    color:#fff;
+    text-shadow:rgba(100,0,0,1) 0 0 3px;
+    background:-webkit-linear-gradient(45deg,#fc0 0%,#fc0 20%,#fa0 20%, #fa0 45%,#fc0 45%,#fc0 70%,#fa0 70%, #fa0 95%,#fc0 95%,#fc0 100%);
+    background-size:30px 30px;
+    background-position:0 0;
+    animation:click 1s infinite linear;
+  }
+  .btn.click::before{
+    display:block;
+  }**/
+  .test.click{
+    display:none;
+  }
+  @keyframes click{
+    0%{
+      background-position:0 0;
+    }
+    100%{
+      background-position:30px 0;
+    }
+  }
+
+
+  .party
+  {
+      width: 50%;
+      height: 70%;
+      background-size: 100%;
+      background-image: url('../images/party.png');
+      position: fixed;
+      top: 0%;
+      left: 40%;
+      background-repeat: no-repeat;
+      display: none;
+      
+  }
+.pum{
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/pum.svg');
+    background-size: 100%;
+  
+    position:absolute;
+    top: 45%;
+    left:45%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.pum.revise{
+    z-index: -2;
+}
+.pum.click{
+    animation-name:pumclick; 
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes pumclick{
+    70%{opacity: 1;}
+   
+    100%{
+      transform: scale(10) rotate(360deg) translateY(-6em);
+      opacity: 0;
+      display: none;
+      
+    }
+  }
+.pumb{
+    width: 1920px;
+    height: 1080px;
+  
+    background-color: rgba(0, 0,0, 1);
+    position:absolute;
+    top: 0%;
+    left: 0%;
+
+}
+.pumb.revise{
+    z-index: -2;
+}
+.pumb.click{
+    animation-name:pumbclick; 
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes pumbclick{
+    90%{opacity: 1;}
+    
+    100%{
+      
+      opacity: 0;
+      display: none;
+     
+      
+    }
+  }
+.touch
+{
+    width: 300px;
+    height: 300px;
+    background-image: url('../images/touch.png');
+    background-size: 100%;
+  
+    position:absolute;
+    top: 40%;
+    left:65%;
+    background-repeat: no-repeat;
+    animation:touchpum 3s  infinite;
+    
+}
+@keyframes touchpum{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{
+      
+      opacity: 1;
+      
+      
+    }
+  }
