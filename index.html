@@ -26,20 +26,14 @@
         $(function () {
             var timer;
             $('.pp').on('click', function () {
-                $('.pp').addClass('revise');
-                $(".pp").show(1000);
+
+
                 $(".black").show(1000);
                 $('.party').remove();
             });
         });
 
-        $(function () {
-            var timer;
-            $('.pp1').on('click', function () {
-                $('.pp1').addClass('revise');
 
-            });
-        });
         $(document).ready(function () {
             $(".pp").hover(function () {
                 $(".party").stop(true).css("display", "block");
@@ -79,20 +73,22 @@
 
 <body>
     <div class="background" style="background-image:url('images/background.svg');">
+        <div class="moon" style="background-image: url('images/moon.svg');"></div>
         <div class="pumkin p1" style="background-image: url('images/p1.png');"></div>
         <div class="pumkin p2" style="background-image: url('images/p2.png');"></div>
         <div class="pumkin p3" style="background-image: url('images/p3.png');"></div>
         <!--<div class="pumkin p4" style="background-image: url('images/p4.png');"></div>
         <div class="pumkin p5" style="background-image: url('images/p5.png');"></div>
         <div class="pumkin p6" style="background-image: url('images/p6.png');"></div>-->
-        <div class="moon" style="background-image: url('images/moon.png');"></div>
+
         <div class="b1"></div>
         <div class="b1 b2"></div>
         <div class="b1 b3"></div>
 
         <div class="black">
-            <div class="word"></div>
+
         </div>
+
 
         <div class="pp">
             <div class="pp1"></div>
@@ -101,12 +97,12 @@
 
     </div>
 
-    <div class="party"></div>
+    <!--<div class="party"></div>-->
     <div class="pumb">
         <div class="pum"></div>
-        <div class="touch"></div>
-    </div>
 
+    </div>
+    <div class="touch"></div>
 
 
 
