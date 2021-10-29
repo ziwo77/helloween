@@ -5,35 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="css/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script>
+        $(function () {
+            var timer;
+            $('.pp').on('click', function () {
+                $('.pp').addClass('click');
+                /*clearTimeout(timer);
+                timer = setTimeout(function () {
+                    $('.pp').removeClass('click');
+                }, 2000);*/
 
+
+            });
+        });
+
+        $(function () {
+            var timer;
+            $('.pp').on('click', function () {
+
+
+                $(".black").show(1000);
+                $('.party').remove();
+            });
+        });
+
+
+        $(document).ready(function () {
+            $(".pp").hover(function () {
+                $(".party").stop(true).css("display", "block");
+            }, function () {
+                $(".party").stop(true).css("display", "none");
+            });
+        });
+        $(document).ready(function () {
+            $(".party").hover(function () {
+                $(".party").stop(true).css("display", "block");
+            }, function () {
+                $(".party").stop(true).css("display", "none");
+            });
+        });
+
+        //開頭畫面
+        $(function () {
+            var timer;
+            $('.pum').on('click', function () {
+                $('.pum').addClass('click');
+                $('.pumb').addClass('click');
+                $('.touch').remove();
+
+                setTimeout(function () { $(".group").fadeIn(); }, 5000);
+
+            });
+        });
+        $(function () {
+            $('.pum').bind("click", function () {
+                setTimeout(function () { $('.pum').addClass('revise'); }, 5000);
+                setTimeout(function () { $('.pumb').addClass('revise'); }, 5000);
+            });
+        })
     </script>
 
 
 
 </head>
 
-<body>
+<body style="text-align: center;">
     <div class="background" style="background-image:url('images/background.svg');">
         <div class="moon" style="background-image: url('images/moon.svg');"></div>
-
 
 
         <div class="b1"></div>
         <div class="b1 b2"></div>
         <div class="b1 b3"></div>
 
-
-
-
+        <div
+            style="width: 80%;height: 70%; background-color: rgba(0, 0, 0, 0.5);border-radius: 20px;top: 20%;position: fixed;left: 10%;padding: 10px;">
+            <a href="index.html">
+                <i class="fas fa-angle-left"
+                    style="color: rgb(119, 119, 119);font-size:xx-large;float: left;margin-left: 15px;"></i></a>
+            <br>
+            <h1 style="font-family: 微軟正黑體;color: rgb(255, 239, 8);">萬聖節活動行程</h1>
+            <p style="font-family: 微軟正黑體;color: white;font-size:larger;line-height: 30pt;">18:00～19:00　報到時間+晚餐時段<br>
+                18:30～18:50　自我介紹時刻<br>
+                18:50～19:20　第一場遊戲：我演你猜(團隊)<br>
+                19:20～19:50　第二場遊戲：猜歌大挑戰(團隊)<br>
+                19:50～20:10　第三場遊戲：天才智囊團(個人)<br>
+                20:10～20:30　第四場遊戲：演技大考驗(個人加分題)<br>
+                20:30～20:40　計分時間&休息時刻<br>
+                20:40～20:55　頒獎典禮<br><br>
+                ※請注意邀請卡中的小遊戲，每人只有一次機會，<br>請於20:30前告知乙禾你的答案。第一位成功者+10分
+            </p>
+        </div>
     </div>
 
-    <!--<div class="party"></div>-->
 
+
+    <div class="topbuttongroup">
+        <a href="https://docs.google.com/spreadsheets/d/1v2pSJ0wG7cGAtt5MLimZ4lJA3MJ17wsfKZhXv6NhmG0/edit?usp=sharing">
+            <div class="btn btn1"><i class="fas fa-dice"></i>分數查詢</div>
+        </a>
+        <a href="page2.html">
+
+            <div class="btn btn2"><i class="fas fa-star-half-alt"></i>活動流程</div>
+        </a>
+    </div>
 </body>
 
 
