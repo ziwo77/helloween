@@ -27,22 +27,22 @@ overflow: hidden;}
 .p1{
     top:0px;
     right:12px;
-    width: 15%;
-    height:60%;
+    width: 30%;
+    height:80%;
     animation-duration: 4s;    /*動畫持續時間，單位為秒*/
 }
 
 .p2{
     top:0px;
     right:100px;
-    width: 15%;
+    width: 50%;
     height:100%;
     animation-duration: 3s;    /*動畫持續時間，單位為秒*/
 }
 .p3{
     top:-200px;
-    right:200px;
-    width: 20%;
+    right:70px;
+    width: 50%;
     height:100%;
     animation-duration: 4s;  
     animation-name: MoveToBottom1;   /*動畫持續時間，單位為秒*/
