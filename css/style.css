@@ -1,8 +1,8 @@
 
    
 body{margin: 0px;
-width: 1920px;
-height: 1080px;
+width: 1080px;
+height: 1920px;
 overflow: hidden;}
 .background{
     background-position:top left;
@@ -21,12 +21,7 @@ overflow: hidden;}
     animation-iteration-count: infinite;  
 }
 
-@media (max-width:828px) {
-    body{margin: 0px;
-        width: 828px;
-        height: 1792px;
-        overflow: hidden;}
-}
+
    
   
 .p1{
@@ -53,61 +48,8 @@ overflow: hidden;}
     animation-name: MoveToBottom1;   /*動畫持續時間，單位為秒*/
 }
 
-.p4{
-    top:0px;
-    left:10px;
-    width: 15%;
-    height:100%;
-    animation-duration: 3s;    /*動畫持續時間，單位為秒*/
-}
 
-.p5{
-    top:0px;
-    left:100px;
-    width: 15%;
-    height:100%;
-    animation-duration: 6s;    /*動畫持續時間，單位為秒*/
-}
 
-.p6{
-    top:0px;
-    left:150px;
-    width: 15%;
-    height:100%;
-    animation-duration: 4s;    /*動畫持續時間，單位為秒*/
-}
-
-@media (max-width:700px) {
-    .p1{
-        top:0px;
-        right:12px;
-        width: 15%;
-        height:60%;
-        animation-duration: 4s;    /*動畫持續時間，單位為秒*/
-    }
-    
-    .p2{
-        top:0px;
-        right:100px;
-        width: 15%;
-        height:100%;
-        animation-duration: 3s;    /*動畫持續時間，單位為秒*/
-    }
-    .p3{
-        top:-200px;
-        right:200px;
-        width: 20%;
-        height:100%;
-        animation-duration: 4s;  
-        animation-name: MoveToBottom1;   /*動畫持續時間，單位為秒*/
-    }
-    
-    .p4,.p5.p6{
-        display: none;       
-    }
-    
-    
-}
 
 @keyframes MoveToBottom{
 0%{ top:0px;}
